@@ -18,6 +18,9 @@ if [[ "$INSTALL_CONFIRM" != "y" && "$INSTALL_CONFIRM" != "Y" ]]; then
   exit 0
 fi
 
+# ========== Temp Dir Fix ==========
+mkdir -p "$HOME/.tmp"
+
 # ========== Download ==========
 echo -e "\n${CYAN}⏬ Downloading datagram-cli...${NC}"
 wget -q --show-progress https://github.com/Datagram-Group/datagram-cli-release/releases/latest/download/datagram-cli-x86_64-linux
@@ -38,7 +41,8 @@ read -p "$(echo -e "${YELLOW}🔑 Enter License Key: ${NC}")" API_KEY
 
 # ========== Run CLI ==========
 echo -e "\n${CYAN}🚀 Running datagram-cli with provided License Key...${NC}\n"
-datagram-cli run -- -key "$API_KEY"
+TMPDIR="$HOME/.tmp" datagram-cli run -- -key "$API_KEY"
 
 # ========== Done ==========
 echo -e "\n${GREEN}✅ All done. Datagram CLI is now installed and running.${NC}"
+echo -e "${CYAN}📢 Join Telegram: @airdropalc for updates and support.${NC}"

@@ -33,4 +33,4 @@ This installer helps you quickly bootstrap the CLI, input your license key, and 
 Paste this into your terminal to instantly clone, set permissions, and run the script:
 
 ```bash
-git clone https://github.com/airdropalc/DATAGRAM.git && cd DATAGRAM && chmod +x install_datagram.sh && ./install_datagram.sh
+git clone https://github.com/airdropalc/DATAGRAM.git && cd DATAGRAM && chmod +x datagram.sh && ./datagram.sh

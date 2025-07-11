@@ -6,7 +6,7 @@ A streamlined, interactive shell script to download, install, and run the [Datag
 
 ---
 
-## ✨ Features
+## Features
 
 - 🚀 One-click install with interactive prompts
 - 🧠 Automatic download of latest `datagram-cli` binary
@@ -15,7 +15,7 @@ A streamlined, interactive shell script to download, install, and run the [Datag
 
 ---
 
-## 🧰 Requirements
+## Requirements
 
 | Requirement         | Description                            |
 |---------------------|----------------------------------------|
@@ -27,7 +27,7 @@ A streamlined, interactive shell script to download, install, and run the [Datag
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 Clone the repository and run the script in **one line**:
 
